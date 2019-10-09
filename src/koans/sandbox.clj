@@ -19,3 +19,11 @@
   (str first-name " " last-name "," id))
   
 (myfunc ["gonzalo" "gomez"] id-test)
+
+(iterate (fn [x] (x)) "algo")
+(repeat "Algo" )
+(take 5 (iterate identity "something"))
+
+(def dalmatian-list ["Pongo" "Perdita" "Puppy" "Pepe"])
+(let [[dalma1 dalma2 & dalmatians] dalmatian-list] [dalma1 dalma2 dalmatians])
+
